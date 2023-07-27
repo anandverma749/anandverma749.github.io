@@ -1,0 +1,161 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 1.5rem;
+}
+
+.link {
+    color: purple;
+    font-weight: bolder;
+    padding: 0 10px;
+}
+
+.link:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* header css */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(90, 122, 122, 0.6);
+    margin-bottom: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header ul li {
+    margin: 30px;
+}
+
+.header ul li a {
+    text-decoration: none;
+}
+
+/* home css */
+main{
+    min-height: 70vh;
+}
+
+.ms {
+    background-color: rgb(200, 198, 198);
+}
+
+.ms1 {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 4rem;
+}
+
+.ms11 {
+    width: 500px;
+}
+
+.ms12 img {
+    width: 400px;
+    border-radius: 50%;
+    border: 15px solid white;
+}
+
+
+.ms2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid rgb(9, 74, 154);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card:hover {
+    margin: 0px;
+    padding: 40px;
+    background-color: rgb(184, 184, 184);
+}
+
+/* footer css */
+footer {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: sticky;
+    bottom: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        position: static;
+        height: fit-content;
+    }
+
+    .header ul {
+        flex-direction: column;
+    }
+
+    .header ul li {
+        margin: 0px;
+    }
+
+    .ms1 {
+        flex-direction: column-reverse;
+        height: fit-content;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ms12 img {
+        width: 300px;
+    }
+    .ms11 {
+        width: auto;
+    }
+    .ms2 {
+        margin: 50px 1px;
+        padding: auto;
+    }
+    .card{
+        max-width: 90vw;
+    }
+    .mob-link{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .ms12 img {
+        width: 200px;
+    }
+}
